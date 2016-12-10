@@ -1,0 +1,15 @@
+If you want used an gpio port,
+you need to use for initialize :
+
+void gpioExport(int gpio)
+open a new gpio node, (int gpio = the number of gpio port).
+
+after that you can set gpio direction (out, in) (1, 0).
+void gpioDirection(int gpio, int direction).
+
+and you can use :
+
+void gpioValue(int gpio, int value) 
+
+for switch the power in the gpio pin.
+1 is on and 0 is off.
